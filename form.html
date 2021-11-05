@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PURCHASE FORM</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body >
+    <nav class="jumbotron"><div >
+        <h2><span style="color: aqua; border: 10px aqua groove; background-color: black;border-radius: 10px;"><b>ADEOLA</b></span> <span style="color: black; border: 10px black groove; background-color: aqua;border-radius: 10px;"><b>MARKETHOUSE</b></span></h2></div>
+
+    <h2 style="text-align: center;color: rgb(24, 13, 13);"><strong><em><span style="background-color: rgb(226, 161, 55); font-size: medium;">Please fill the form below to purchase your foodstuffs</span></strong></em></h2>
+    <form autocomplete="on">
+    <fieldset>
+        <legend><strong>Personal Profile</strong> </legend>
+        <label for="firstname"><strong>Firstname</strong></label> <br>
+        <input type="text" name="Firstname" id="firstname" placeholder="Write your Firstname" value="" autofocus required><br>
+        <label for="middlename"><strong>Middle Name</strong></label> <br>
+        <input type="text" name="middlename" id="middlename" placeholder="Write your Middle name" value="" autofocus required><br>
+        <label for="Lastname"><strong>Lastname</strong></label> <br>
+        <input type="text" name="Lastname" id="Lastname" placeholder="Write your Lastname" value="" required><br>
+        <label for="Email"><strong>Email</strong></label> <br>
+        <input type="text" name="Email" id="Email" placeholder="Write your Email" value=""> <br>
+        <label for="Phonenumber"><strong>Phonenumber</strong></label> <br>
+        <input type="text" name="Phonenumber" id="Phonenumber" placeholder="Phone number" value="">
+    </fieldset><br>
+
+    <fieldset>
+            <legend>Sex</legend> 
+        <input type="radio" name="Gender">
+        <label for="Male">Male</label><br>
+        <input type="radio" name="Gender">
+        <label for="Female">Female</label><br>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Payment Method</legend> 
+    <input type="radio" name="payment">
+    <label for="Cash">Cash</label><br>
+    <input type="radio" name="payment">
+    <label for="Female">Transfer</label><br>
+    <input type="radio" name="payment">
+    <label for="Cash">Crypto Currency</label><br>
+</fieldset>
+
+    <fieldset>
+        <legend>Select Car</legend>
+       
+        <label for="age"><h3>Select your foodstuffs</h3></label>
+        <select name="car" id="car" >
+            <option value="rice">rice</option>
+            <option value="chicken">chicken</option>
+            <option value="fish">fish</option>
+            <option value="yam">yam</option> <br>
+            <option value="vegies"> vegetables.</option>
+            <option value="Egg">Egg.</option>
+            <option value="Beans">Beans.</option>
+           </fieldset>
+
+    <input type="submit" value="Submit">
+    <div id="output"></div>
+    
+</body>
+</html>
