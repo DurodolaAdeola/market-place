@@ -1,0 +1,19 @@
+body {
+    background-color: skyblue;
+    
+}
+.container {
+    margin: 20px;
+}
+h2{
+    font-style: italic;
+    font-size: small;
+}
+#btn:hover {
+    background-color: skyblue;
+    color: teal;
+}
+#btn {
+    background-color: black;
+    color: green;
+}
