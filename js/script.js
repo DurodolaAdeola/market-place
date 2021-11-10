@@ -31,16 +31,16 @@ $(document).ready(function(){
 
 })
 $(document).ready(function(){
-    ("form#form").submit(function(event){
-        event.preventDefault();
-        let car =($("#car").val());
-        let firstName =($("#firstname").val());
-        let lastName =($("#lastname").val());
-        let middleName =($("#middlename").val());
+    (".Form").submit(function(event){
+        //event.preventDefault();
+        let car =$("#car").val();
+        let firstName =$("#firstname").val();
+        let lastName =$("#lastname").val();
+        let middleName =$("#middlename").val();
         
     
     
-    $("#output").text(`${firstName} ${lastName} ${middleName} ${car}`);
+    $("#output").show(`${firstName} ${lastName} ${middleName} `);
 
     })
      
