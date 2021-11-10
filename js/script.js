@@ -31,18 +31,23 @@ $(document).ready(function(){
 
 })
 $(document).ready(function(){
-    (".Form").submit(function(event){
-        //event.preventDefault();
-        let car =$("#car").val();
+    $(".Form").submit(function(event){
+        
+        const cars =$("#car").val();
+        console.log(cars)
         let firstName =$("#firstname").val();
-        let lastName =$("#lastname").val();
+        let lastName =$("#Lastname").val();
         let middleName =$("#middlename").val();
+        const gen =$("input:radio[name= Gender]:checked").val();
+        const pay =$("input:radio[name=payment]:checked").val();
+        let phone = $("#phonenumber").val();
+        event.preventDefault();
         
     
     
-    $("#output").show(`${firstName} ${lastName} ${middleName} `);
+    $("#output").text(`${firstName} ${lastName} ${middleName} ${cars} ${gen} ${pay} ${phone}`);
 
     })
      
 
-})
+}) 

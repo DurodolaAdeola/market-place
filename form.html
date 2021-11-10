@@ -43,20 +43,33 @@
 
     <fieldset>
             <legend>Sex</legend> 
-        <input type="radio" name="Gender">
-        <label for="Male">Male</label><br>
-        <input type="radio" name="Gender">
-        <label for="Female">Female</label><br>
+            <label>
+                <input type="radio" id="male" name="Gender" value="male" checked >
+                Male
+            </label>
+            <br>
+        
+        <label>
+            <input type="radio" name="Gender"  value="female">
+            Female</label><br>
     </fieldset><br>
 
     <fieldset>
         <legend>Payment Method</legend> 
-    <input type="radio" name="payment">
-    <label for="Cash">Cash</label><br>
-    <input type="radio" name="payment">
-    <label for="Female">Transfer</label><br>
-    <input type="radio" name="payment">
-    <label for="Cash">Crypto Currency</label><br>
+    
+    <label>
+        <input type="radio" name="payment" value="cash">
+        Cash</label><br>
+    
+    <label>
+        <input type="radio" name="payment" value="transfer">
+        Transfer</label><br>
+   
+    <label>
+        <input type="radio" name="payment" value="crypto currency" checked>
+        Crypto Currency
+        
+    </label><br>
 </fieldset>
 
     <fieldset>
@@ -74,7 +87,7 @@
            </fieldset><br>
 
     <input type="submit" name="submit" value="Submit"><br>
-
+</form>
 
     <div id="output"></div>
     
