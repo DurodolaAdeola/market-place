@@ -40,12 +40,20 @@ $(document).ready(function(){
         let middleName =$("#middlename").val();
         const gen =$("input:radio[name= Gender]:checked").val();
         const pay =$("input:radio[name=payment]:checked").val();
-        let phone = $("#phonenumber").val();
+        let phone = $("#Phonenumber").val();
+        let email =$("#Email").val();
         event.preventDefault();
-        
+        $("#Table").toggle();
+$(".m").text(`${firstName} ${lastName}`);
+$(".t").text(email);
+$(".e").text(cars);
+$(".s").text(phone);
+$(".d").text(pay);
+$(".b").text(gen);
     
     
-    $("#output").text(`${firstName} ${lastName} ${middleName} ${cars} ${gen} ${pay} ${phone}`);
+    
+   // $("#output").text(`${firstName} ${lastName} ${middleName} ${cars} ${gen} ${pay} ${phone}`);
 
     })
      
